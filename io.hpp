@@ -40,6 +40,8 @@ namespace kurff{
         }
         void read_image(int idx, Mat& image){
             image = imread(this->path_ + "/" + file_name_[idx]);
+            
+
 
         }
         void write_image(int idx, const Mat& image){

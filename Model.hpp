@@ -18,6 +18,7 @@ class Model{
         virtual void init(string model_file, string model_weight) = 0;
         virtual void run() = 0;
     protected:
+        
 
 
 };
@@ -31,6 +32,8 @@ class Caffe2Model: public Model{
 
         }
         void init(string model_file, string model_weight){
+
+            
 
         }
 
