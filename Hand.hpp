@@ -18,8 +18,10 @@ namespace kurff{
 
 
             }
-            void init(){
-
+            void init(string model_file, string model_weight){
+                model_ = shared_ptr<Model> (new Caffe2Model() );
+                model_->init(model_file, model_weight);
+                
                 
             }
             void run(){

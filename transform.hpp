@@ -12,9 +12,12 @@ class Transform{
     }
 
     void t3dto2d(const Point3d& point3d, Point2d& point2d){
+        
+
 
     }
     void t2dto3d(const Point2d& point2d, Point3d& point3d){
+
 
     }
 
