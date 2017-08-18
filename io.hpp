@@ -5,6 +5,7 @@ using namespace cv;
 #include <string>
 #include <vector>
 using namespace std;
+#include "registry.h"
 namespace kurff{
   class IO{
       public:
@@ -23,8 +24,14 @@ namespace kurff{
       protected:
         string path_;
         string anno_path_;
+        string extra_path_;
         vector<string> file_name_;
   };
+
+
+DECLARE_REGISTRY(IORegistry, IO);
+DEFINE_REGISTRY(IORegistry, IO);
+
 
   class IVCLIO: public IO{
       public:
@@ -51,6 +58,7 @@ namespace kurff{
     
   };
 
+  REGISTER_CLASS(IORegistry,IVCLIO, IVCLIO);
 
 
 
